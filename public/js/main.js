@@ -10,4 +10,6 @@ angular.module('ifsp', ['ngRoute']).config(function($routeProvider) {
     templateUrl: 'partials/contato.html',
     controller: 'ContatoController'
   });
+
+  $routeProvider.otherwise({ redirectTo: '/contatos' })
 });
